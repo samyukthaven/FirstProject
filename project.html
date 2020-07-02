@@ -1,0 +1,143 @@
+<html>
+
+<head>
+<title> Baking! </title>
+<script src="p5.js"> </script>
+</head>
+
+<body>
+
+
+<script id = "script" type = "text/javascript"> 
+var img;
+
+
+
+function setup()
+{
+	createCanvas(displayWidth,displayHeight*2);
+}
+
+
+
+function draw()
+{
+
+	
+	if(mouseIsPressed)
+	{
+
+		//About
+		if((300 < mouseX && mouseX < 420) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/about.html");
+		}
+
+
+		//Recipes
+		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+		}
+
+
+		//Cookbooks
+		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+		}
+
+		//Tips
+		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+		}
+
+
+	}
+
+
+	noStroke();
+	fill(159, 198, 235);
+	rect(0,0,displayWidth,120);
+	fill(0,0,0);
+	textFont('Impact');
+	textSize(50);
+	text("Baking Recipes, Tips, + Tricks!", 480,60);
+
+	noStroke();
+	fill(214, 159, 235);
+	rect(0,120,displayWidth,75);
+
+	fill(159,198,235);
+	rect(0,195,displayWidth, displayHeight*2);
+
+	fill(0,0,0);
+	textFont('Georgia');
+	textSize(25);
+	text("Recipes",displayWidth/5 + displayWidth/5,170);
+    	text("About", displayWidth/5, 170);
+	text("Cookbooks", displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+	text("Tips", displayWidth/5 + displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+
+	textFont('Segoe Script');
+	textSize(40);
+	text("Explore the Endless Possibilities That Baking Holds For You!", 150, 275);	
+
+	fill(156, 219, 255);
+	rect(0,330,displayWidth, 400);
+
+	fill(130,200,255);
+	rect(0,730,displayWidth,400);
+
+	fill(156, 219, 255);
+	rect(0,1130,displayWidth, 400);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(30);
+	text("Explore our collection of recipes that are crafted", 800, 450);
+	text("to satisfy your sweet tooth! Our recipes include",810,480);
+	text("a description, the ingredient list, and links to ",825,510); 
+	text("thorough instructions. These recipes are really", 820,540);
+	text("delicious and perfect to share with your friends", 815,570);
+	text("and family. Make sure to check it out!",870,600);
+
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(30);
+	text("Look through our amazing selection of cookbooks", 100, 850);
+	text("from various authors who are renowned for their",103,880);
+	text("baking tips and skills. These cookbooks will be great for",65,910); 
+	text("beginner bakers who want clear and understandable", 85,940);
+	text("directions to make delicious desserts! Take a look at", 90,970);
+	text("them to enhance your baking abilities!",160,1000);
+
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(30);
+	text("If you need help perfecting your baking skills,", 800, 1250);
+	text("don't forget to check out the tips section of",810,1280);
+	text("our website! We have researched many useful tips",765,1310); 
+	text("and tricks that could bring your desserts to the next", 757,1340);
+	text("level. There are helpful links alongside each tip if", 775,1370);
+	text("you want to understand the benefits of each one.",777,1400);
+
+
+
+	
+
+	
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
