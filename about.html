@@ -1,0 +1,135 @@
+<html>
+
+<head>
+<title> About </title>
+<script src="p5.js"> </script>
+</head>
+
+<body>
+
+
+<script id = "script" type = "text/javascript"> 
+var img;
+
+
+
+function setup()
+{
+	createCanvas(displayWidth,displayHeight*1.5);
+	img = loadImage('aboutpagepicture.jpg');
+}
+
+
+
+function draw()
+{
+
+	
+	if(mouseIsPressed)
+	{
+	
+		
+		//About
+		if((300 < mouseX && mouseX < 420) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/about.html");
+		}
+
+
+		//Recipes
+		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+		}
+
+
+		//Cookbooks
+		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+		}
+
+		//Tips
+		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+		}
+
+
+
+
+
+
+
+	}
+	noStroke();
+	fill(159, 198, 235);
+	rect(0,0,displayWidth,120);
+	fill(0,0,0);
+	textFont('Impact');
+	textSize(50);
+	text("Baking Recipes, Tips, + Tricks!", 480,60);
+
+	noStroke();
+	fill(214, 159, 235);
+	rect(0,120,displayWidth,75);
+
+	fill(159,198,235);
+	rect(0,195,displayWidth, displayHeight*1.5);
+
+	fill(0,0,0);
+	textFont('Georgia');
+	textSize(25);
+	text("Recipes",displayWidth/5 + displayWidth/5,170);
+    	text("About", displayWidth/5, 170);
+	fill(0,0,0);
+	strokeWeight(5);
+	//rect(displayWidth/5-20, 120, 120, 75);
+	text("Cookbooks", displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+	text("Tips", displayWidth/5 + displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+
+	textFont('Lobster');
+	textSize(80);
+	text("ABOUT", 670, 300);
+
+	fill(156, 219, 255);
+	rect(100,400,800,600);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("If you find it difficult to find different recipes that are both",240,540);  
+	text("delicious and easy to follow, this website is perfect for you!", 237, 560);
+	text("This website is full of different recipes, cookbooks, and tips that you", 200, 580);
+	text("can use to become a better baker. You no longer have to search through", 185, 600);
+	text("the internet for hours to find instructions to make a dessert. This website", 175, 620);
+	text("has done all of that work for you! We have featured various different", 195, 640);
+	text("bakers and their amazing creations who we know have wonderful", 205, 660);
+	text("recipes for your baking needs. You can easily view their directions through", 170, 680);
+	text("the links provided throughout the website. We also showcase various", 190, 700); 
+	text("cookbooks from award-winning authors who you can check out to enhance", 165, 720);
+	text("your baking skills. Baking books are also a great for beginner bakers", 190, 740);
+	text("because they are a way to physically see all the steps you need to complete!", 165, 760);
+	text("Our tips section features various tips for different desserts and links that", 175, 780);
+	text("lead to articles thorough explanations from professionals.", 230, 800);
+	text("Hopefully, you are able to find baking recipes that you can follow at", 190, 820);
+	text("home and create delicious creations!", 310, 840);
+
+
+	image(img,1000,500);
+
+
+	
+
+	
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
