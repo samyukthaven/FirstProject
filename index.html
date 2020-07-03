@@ -16,6 +16,7 @@ var img;
 function setup()
 {
 	createCanvas(displayWidth,displayHeight*2);
+	img = loadImage('cheesecake.jpg');
 }
 
 
@@ -124,6 +125,7 @@ function draw()
 	text("and tricks that could bring your desserts to the next", 757,1340);
 	text("level. There are helpful links alongside each tip if", 775,1370);
 	text("you want to understand the benefits of each one.",777,1400);
+	image(img,75,100);
 
 
 
