@@ -1,0 +1,187 @@
+<html>
+
+<head>
+<title> Cookbooks </title>
+<script src="p5.js"> </script>
+</head>
+
+<body>
+
+
+<script id = "script" type = "text/javascript"> 
+var img;
+
+
+
+function setup()
+{
+	createCanvas(displayWidth,displayHeight*2);
+}
+
+
+
+function draw()
+{
+
+	
+	if(mouseIsPressed)
+	{
+	
+		
+		//About
+		if((300 < mouseX && mouseX < 420) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/about.html");
+		}
+
+
+		//Recipes
+		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+		}
+
+
+		//Cookbooks
+		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+		}
+
+		//Tips
+		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+		}
+
+
+
+
+
+
+
+	}
+	noStroke();
+	fill(159, 198, 235);
+	rect(0,0,displayWidth,120);
+	fill(0,0,0);
+	textFont('Impact');
+	textSize(50);
+	text("Baking Recipes, Tips, + Tricks!", 480,60);
+
+	noStroke();
+	fill(214, 159, 235);
+	rect(0,120,displayWidth,75);
+
+	fill(159,198,235);
+	rect(0,195,displayWidth, displayHeight*2);
+
+	fill(0,0,0);
+	textFont('Georgia');
+	textSize(25);
+	text("Recipes",displayWidth/5 + displayWidth/5,170);
+    	text("About", displayWidth/5, 170);
+	fill(0,0,0);
+	strokeWeight(5);
+	//rect(displayWidth/5-20, 120, 120, 75);
+	text("Cookbooks", displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+	text("Tips", displayWidth/5 + displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+
+	textFont('Lobster');
+	textSize(80);
+	text("COOKBOOKS", 550, 300);
+	
+
+	//first
+	fill(156, 219, 255);
+	rect(60,330,1420, 400);
+	
+	fill(214, 214, 214);
+	rect(900,360,550,350);
+	
+	fill(0,0,0);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Pastry Love: A Baker's Journal",930,420);
+	text("of Favorite Recipes",1030,450);
+
+	textSize(20);
+	textFont('Lobster');
+	text("Joanne Chang", 1120,480);
+
+
+	textSize(20);
+	textFont('Georgia');
+	text("This cookbook includes over 125 different recipes", 960, 550);
+	text("when you want something warm and fresh to satisfy", 950, 570);
+	text("your sweet tooth. Joanne Chang is an award-winning baker", 915, 590);
+	text("for her eight bakeries in Boston, Massachusetts.", 970, 610);
+	
+	
+
+	//second
+	fill(130,200,255);
+	rect(20,730,1420,400);
+
+	fill(214, 214, 214);
+	rect(50,760,550,350);
+
+	fill(0,0,0);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Baking: From My Home to Yours", 70,820);
+
+	textSize(20);
+	textFont('Lobster');
+	text("Dorie Greenspan", 1120,4);
+
+
+	textSize(20);
+	textFont('Georgia');
+	text("This awesome cookbook contains around 300 recipes", 90, 950);
+	text("for various desserts that even beginners can make!", 100, 970);
+	text("your sweet tooth. Joanne Chang is an award-winning baker", 65, 990);
+	text("for her eight bakeries in Boston, Massachusetts.", 115, 1010);
+
+
+
+	//third
+	fill(156, 219, 255);
+	rect(60,1130,1420, 400);
+
+	fill(214, 214, 214);
+	rect(900,1160,550,350);
+
+	fill(0,0,0);
+	textFont('Segoe Script');
+	textSize(30);
+	text("The Last Course: The Desserts",940,1220);
+	text("of Gramercy Tavern",1010,1250);
+
+
+	textSize(20);
+	textFont('Lobster');
+	text("Claudia Fleming", 1100,1280);
+	
+
+	textSize(20);
+	textFont('Georgia');
+	text("This amazing cookbook contains a collection of over", 940, 1350);
+	text("175 different recipes for you to try out!", 990, 1370);
+	text("Claudia Fleming is an award winning pastry chef", 950, 1390);
+	text("at New York City's Gramercy Tavern.", 1005, 1410);
+
+	
+
+	
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
