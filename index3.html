@@ -10,12 +10,17 @@
 
 <script id = "script" type = "text/javascript"> 
 var img;
+var img1;
+var img2;
 
 
 
 function setup()
 {
 	createCanvas(displayWidth,displayHeight*2);
+	img = loadImage('cookbookone.jpg');
+	img1 = loadImage('cookbookthree.jpg');
+	img2 = loadImage('cookbooktwo.jpg');
 }
 
 
@@ -38,20 +43,20 @@ function draw()
 		//Recipes
 		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
 		{
-			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+			window.open("index2.html");
 		}
 
 
 		//Cookbooks
 		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
 		{
-			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+			window.open("index3.html");
 		}
 
 		//Tips
 		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
 		{
-			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+			window.open("index1.html");
 		}
 
 
@@ -170,6 +175,9 @@ function draw()
 	text("175 different recipes for you to try out!", 990, 1370);
 	text("Claudia Fleming is an award winning pastry chef", 950, 1390);
 	text("at New York City's Gramercy Tavern.", 1005, 1410);
+	image(img,120,375,500,300);
+	image(img1,860,775,500,300);
+	image(img2,120,1175,500,300);
 
 	
 
