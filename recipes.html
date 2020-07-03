@@ -1,0 +1,445 @@
+<html>
+
+<head>
+<title> Recipes </title>
+<script src="p5.js"> </script>
+</head>
+
+<body>
+
+
+<script id = "script" type = "text/javascript"> 
+var img;
+
+
+
+function setup()
+{
+	createCanvas(displayWidth,displayHeight*3);
+}
+
+
+
+function draw()
+{
+
+	
+	if(mouseIsPressed)
+	{
+	
+		
+
+		
+		//About
+		if((300 < mouseX && mouseX < 420) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/about.html");
+		}
+
+
+		//Recipes
+		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+		}
+
+
+		//Cookbooks
+		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+		}
+
+		//Tips
+		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+		}
+
+		//Cheesecake Recipe
+		if((260 < mouseX && mouseX < 360) &&  (1040 < mouseY && mouseY < 1080))
+		{
+			window.open("https://sallysbakingaddiction.com/classic-cheesecake/");
+		}
+
+
+		//Brownie
+		if((730 < mouseX && mouseX < 830) &&  (1080 < mouseY && mouseY < 1120))
+		{
+			window.open("https://www.loveandlemons.com/brownies-recipe/");
+		}
+
+
+		//Vanilla Cake
+		if((1200 < mouseX && mouseX < 1300) &&  (1040 < mouseY && mouseY < 1080))
+		{
+			window.open("https://sallysbakingaddiction.com/vanilla-cake/");
+		}
+
+
+		//Apple Pie
+		if((260 < mouseX && mouseX < 360) &&  (1940 < mouseY && mouseY < 1980))
+		{
+			window.open("https://www.tasteofhome.com/recipes/apple-pie/");
+		}
+
+
+		//Scones Recipe
+		if((730 < mouseX && mouseX < 830) &&  (1980 < mouseY && mouseY < 2020))
+		{
+			window.open("https://sallysbakingaddiction.com/scones-recipe/");
+		}
+		
+
+		//Chocolate Chip Cookies Recipe
+		if((1200 < mouseX && mouseX < 1300) &&  (1940 < mouseY && mouseY < 1980))
+		{
+			window.open("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/");
+		}
+
+
+
+
+
+	}
+	noStroke();
+	fill(159, 198, 235);
+	rect(0,0,displayWidth,120);
+	fill(0,0,0);
+	textFont('Impact');
+	textSize(50);
+	text("Baking Recipes, Tips, + Tricks!", 480,60);
+
+	noStroke();
+	fill(214, 159, 235);
+	rect(0,120,displayWidth,75);
+
+	fill(159,198,235);
+	rect(0,195,displayWidth, displayHeight*3);
+
+	fill(0,0,0);
+	textFont('Georgia');
+	textSize(25);
+	text("Recipes",displayWidth/5 + displayWidth/5,170);
+    	text("About", displayWidth/5, 170);
+	fill(0,0,0);
+	strokeWeight(5);
+	//rect(displayWidth/5-20, 120, 120, 75);
+	text("Cookbooks", displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+	text("Tips", displayWidth/5 + displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+
+
+	textFont('Lobster');
+	textSize(80);
+	text("RECIPES", 650, 300);
+
+
+	//first
+	
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Cheesecake",210,340);
+	
+
+	fill(156, 219, 255);
+	rect(70,350,470,800);
+	fill(214, 214, 214);
+	rect(100,700,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(260,1040,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 267, 1070);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",260,740);
+	
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-1 and 1/2 Cups Graham Cracker Crumbs",130,800);
+	text("-5 Tablespoons Melted Unsalted Butter",130,820);
+	text("-1 and 1/2 cups graham cracker crumbs",130,840);
+	text("-1 and 1/4 Cup Granulated Sugar",130,860);
+	text("-4 Eight-Ounce blocks of Softened Cream Cheese",130,880);
+	text("-1 Cup Sour Cream",130,900);
+	text("-1 Teaspoon Pure Vanilla Extract",130,920);
+	text("-2 Teaspoons Fresh Lemon Juice",130,940);
+	text("-3 Large Eggs",130,960);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Here is the recipe for how to create this amazing",102,620);
+	text("Cheesecake! This recipe is very simple to to follow.",95,640);
+	text("This Cheesecake would be delicious to enjoy with",100,660);
+	text("others or just with yourself! :)",185,680);
+
+
+	//second
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Brownies",710,380);
+
+	fill(74, 180, 255);
+	rect(540,390,470,800);
+	fill(214, 214, 214);
+	rect(570,740,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(730,1080,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 737, 1110);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",730,780);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Here's the recipe to create these scrumptuous",585,660);
+	text("brownies! These brownies are extra soft and gooey",560,680);
+	text("with tons of chocolate chips. You should definitely",565,700);
+	text("try making these perfect sweet treats!",620,720);
+	
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-1 and 1/2 Cups Granulated Sugar",600,840);
+	text("-3/4 Cups All-Purpose Flour",600,860);
+	text("-2/3 Cup Cocoa Powder",600,880);
+	text("-1/2 Cup Powdered Sugar",600,900);
+	text("-1/2 Cup Dark Chocolate Chips",600,920);
+	text("-3/4 Teaspoons Sea Salt",600,940);
+	text("-1/2 Cup Canola Oil or Extra-Virgin Olive Oil",600,960);
+	text("-2 Tablespoons Water",600,980);
+	text("-1/2 Teaspoon Vanilla",600,1000);
+	text("-2 Large Eggs",600,1020);
+
+
+
+	//third
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Vanilla Cake",1155,340);
+
+	fill(156, 219, 255);
+	rect(1010,350,470,800);
+	fill(214, 214, 214);
+	rect(1040,700,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(1200,1040,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 1207, 1070);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-3 and 2/3 Cups Cake Flour",1070,800);
+	text("-1 Teaspoon Salt",1070,820);
+	text("-1 Teaspoon Baking Powder",1070,840);
+	text("-3/4 Teaspoon Baking Soda",1070,860);
+	text("-1 and 1/2 Cups Softened Unsalted Butter",1070,880);
+	text("-2 Cups Granulated Sugar",1070,900);
+	text("-1 Tablespoon Pure Vanilla Extract",1070,920);
+	text("-1 and 1/2 Cups Buttermilk",1070,940);
+	text("-3 Large Eggs and 2 Egg Whites",1070,960);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Below is the recipe for how to create this delicious",1035,620);
+	text("Vanilla Cake Recipe! The cake is extremely rich",1050,640);
+	text("and soft, making it perfect to share with all",1065,660);
+	text("of your family and friends.",1135,680);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",1200,740);
+
+
+
+
+
+	//fourth
+	
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Apple Pie",220,1240);
+
+	fill(156, 219, 255);
+	rect(70,1250,470,800);
+	fill(214, 214, 214);
+	rect(100,1600,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(260,1940,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 267, 1970);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",260,1640);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-1/2 Cup Granulated Sugar",130,1690);
+	text("-1/2 Cup Packed Brown Sugar",130,1710);
+	text("-3 Tablespoons All-Purpose Flour",130,1730);
+	text("-1 Teaspoon Ground Cinnamon",130,1750);
+	text("-1/4 Teaspoon Ground Cinnamon",130,1770);
+	text("-1/4 Teaspoon Ground Ginger",130,1790);
+	text("-1/4 Teaspoon Ground Nutmeg",130,1810);
+	text("-6 to 7 Sliced and Peeled Tart Apples",130,1830);
+	text("-1 Tablespoon lemon juice",130,1850);
+	text("-Pastry for Double-Crust Pie",130,1870);
+	text("-1 Tablespoon Butter",130,1890);
+	text("-1 Large Egg",130,1910);
+
+	
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Here's the recipe to make this decadent apple",102,1520);
+	text("pie recipe! The instructions are very simple and",95,1540);
+	text("easy to follow for anyone who is new at pie-making.",80,1560);
+	text("Check it out! :)",230,1580);
+
+	
+
+	//fifth
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Scones",725,1280);
+
+	fill(74, 180, 255);
+	rect(540,1290,470,800);
+	fill(214, 214, 214);
+	rect(570,1640,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(730,1980,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 737, 2010);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",730,1680);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-2 Cups All-Purpose Flour",600,1740);
+	text("-1/2 Cup Granulated Sugar",600,1760);
+	text("-1/2 Teaspoon Salt",600,1780);
+	text("-2 and 1/2 Teaspoons Baking Powder",600,1800);
+	text("-1/2 Cup Unsalted Butter (Frozen)",600,1820);
+	text("-1/2 Cup Heavy Cream or Buttermilk",600,1840);
+	text("-1 Large Egg",600,1860);
+	text("-1 and 1/2 Teaspoons Pure Vanilla Extract",600,1880);
+	text("-1 Cup Add-Ins (Chocolate Chips, Nuts, etc.)",600,1900);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Below are the directions to make these amazing",575,1560);
+	text("scones for dessert! The recipe is simple and extremely",545,1580);
+	text("easy to customize with fruit, chocolate, nuts,",575,1600);
+	text("and any of your favorite ingredients! ",610,1620);
+
+
+
+	//sixth
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(50);
+	text("Chocolate Chip Cookies",1070,1240);
+
+	fill(156, 219, 255);
+	rect(1010,1250,470,800);
+	fill(214, 214, 214);
+	rect(1040,1600,410,400);
+		//rectangle
+	fill(39, 134, 143);
+	rect(1200,1940,100,40);
+		//Learn More
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 1207, 1970);
+
+	fill(0,0,0);
+	textFont('Gabriola');
+	textSize(30);
+	text("Ingredients:",1200,1640);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(18);
+	text("-1 Cup Salted Butter",1070,1700);
+	text("-1 Cup Granulated Sugar",1070,1720);
+	text("-1 Cup Light Brown Sugar",1070,1740);
+	text("-2 Teaspoon Pure Vanilla Extract",1070,1760);
+	text("-2 Large Eggs",1070,1780);
+	text("-3 Cups All-Purpose Flour",1070,1800);
+	text("-1 Teaspoon Baking Soda",1070,1820);
+	text("-1/2 Teaspoon Baking Powder",1070,1840);
+	text("-1 Teaspoon Sea Salt",1070,1860);
+	text("-2 Cups Chocolate Chips",1070,1880);
+
+	fill(0,0,0);
+	textFont('Cambria');
+	textSize(20);
+	text("Here is how to make to make these awesome",1060,1520);
+	text("chocolate chip cookies. These are a simple and classic",1020,1540);
+	text("dessert that you can make for any occassion! The",1035,1560);
+	text("link to the full recipe is down below!",1095,1580);
+
+
+
+	
+
+
+	
+
+	
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
