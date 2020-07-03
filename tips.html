@@ -1,0 +1,350 @@
+<html>
+
+<head>
+<title> Tips and Tricks </title>
+<script src="p5.js"> </script>
+</head>
+
+<body>
+
+
+<script id = "script" type = "text/javascript"> 
+var img;
+
+
+
+function setup()
+{
+	createCanvas(displayWidth,displayHeight*2);
+}
+
+
+
+function draw()
+{
+
+	
+	if(mouseIsPressed)
+	{
+
+
+		//About
+		if((300 < mouseX && mouseX < 420) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/about.html");
+		}
+
+
+		//Recipes
+		if((600 < mouseX && mouseX < 720) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/recipes.html");
+		}
+
+
+		//Cookbooks
+		if((900 < mouseX && mouseX < 1070) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/cookbooks.html");
+		}
+
+		//Tips
+		if((1200 < mouseX && mouseX < 1300) &&  (120 < mouseY && mouseY < 195))
+		{
+			window.open("file:///C:/Users/samyu/Downloads/HTML/HTML%20Game/tips.html");
+		}
+
+
+		//tip#1
+		if((290 < mouseX && mouseX < 390) &&  (570 < mouseY && mouseY < 610))
+		{
+			window.open("https://tasty.co/article/jasminnahar/seriously-useful-baking-tips");
+
+		}
+
+
+		//tip#2
+		if((750 < mouseX && mouseX < 850) &&  (570 < mouseY && mouseY < 610))
+		{
+			window.open("https://www.bonappetit.com/test-kitchen/cooking-tips/article/make-baked-good-better");
+		}
+
+
+		//tip#3
+		if((1210 < mouseX && mouseX < 1310) &&  (570 < mouseY && mouseY < 610))
+		{
+			window.open("https://sallysbakingaddiction.com/top-10-baking-tips/");
+		}
+
+
+
+		//tip#4
+		if((290 < mouseX && mouseX < 390) &&  (970 < mouseY && mouseY < 1010))
+		{
+			window.open("https://tasty.co/article/jasminnahar/seriously-useful-baking-tips");
+		}
+
+		//tip#5
+		if((750 < mouseX && mouseX < 850) &&  (970 < mouseY && mouseY < 1010))
+		{
+			window.open("https://www.bonappetit.com/test-kitchen/cooking-tips/article/make-baked-good-better");
+		}
+
+
+		//tip#6
+		if((1210 < mouseX && mouseX < 1310) &&  (970 < mouseY && mouseY < 1010))
+		{
+			window.open("https://www.foodnetwork.com/recipes/packages/baking-guide/baking-hacks-of-pastry-chefs");
+		}
+		
+
+		//tip#7
+		if((290 < mouseX && mouseX < 390) &&  (1370 < mouseY && mouseY < 1410))
+		{
+			window.open("https://www.bonappetit.com/test-kitchen/cooking-tips/article/make-baked-good-better");
+		}
+
+
+		//tip#8
+		if((750 < mouseX && mouseX < 850) &&  (1370 < mouseY && mouseY < 1410))
+		{
+			window.open("https://sallysbakingaddiction.com/top-10-baking-tips/");
+		}
+		
+
+		//tip#9
+		if((1210 < mouseX && mouseX < 1310) &&  (1370 < mouseY && mouseY < 1410))
+		{
+			window.open("https://www.thespruceeats.com/baking-tips-and-tricks-4165823");
+		}
+
+
+
+		
+
+
+	}
+	noStroke();
+	fill(159, 198, 235);
+	rect(0,0,displayWidth,120);
+	fill(0,0,0);
+	textFont('Impact');
+	textSize(50);
+	text("Baking Recipes, Tips, + Tricks!", 480,60);
+
+	noStroke();
+	fill(214, 159, 235);
+	rect(0,120,displayWidth,75);
+
+	fill(159,198,235);
+	rect(0,195,displayWidth, displayHeight*2);
+
+	fill(0,0,0);
+	textFont('Georgia');
+	textSize(25);
+	text("Recipes",displayWidth/5 + displayWidth/5,170);
+    	text("About", displayWidth/5, 170);
+	text("Cookbooks", displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+	text("Tips", displayWidth/5 + displayWidth/5 + displayWidth/5 + displayWidth/5, 170);
+
+	textFont('Lobster');
+	textSize(80);
+	text("TIPS", 720, 300);
+
+	//FIRST ROW
+	//top left box
+	fill(156, 219, 255);
+	rect(140,350,400,300);
+	fill(214, 214, 214);   //gray
+	rect(160,370,360,260);
+	fill(39, 134, 143);
+	rect(290,570,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Use an ice cream", 195,420);
+	text("scooper to portion", 190,450);
+	text("out your muffin and", 170,480);
+	text("cupcake batter into", 175, 510);
+	text("the baking pan.", 210,540);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 297, 600);
+	
+
+
+	//next on top row
+	fill(74, 180, 255);
+	rect(600,350,400,300);
+	fill(214, 214, 214);   //gray
+	rect(620,370,360,260);
+	fill(39, 134, 143);
+	rect(750,570,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Don't mess with the", 645,420);
+	text("oven temperature", 660,450);
+	text("and the cooking time ", 630,480);
+	text("unless it is", 705, 510);
+	text("necessary.", 715,540);	
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 757, 600);
+
+
+	//top right box
+	fill(156, 219, 255);
+	rect(1060,350,400,300);
+	fill(214, 214, 214);    //gray
+	rect(1080,370,360,260);
+	fill(39, 134, 143);
+	rect(1210,570,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("To keep your", 1160,440);
+	text("leftover cookies soft", 1110,470);
+	text("store them with a ", 1120,500);
+	text("piece of bread.", 1140, 530);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 1217, 600);
+
+
+
+
+
+	//NEXT ROW
+	fill(74, 180, 255);
+	rect(140,750,400,300);
+	fill(214, 214, 214);
+	rect(160,770,360,260);
+	fill(39, 134, 143);
+	rect(290,970,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("If you need to use", 200,820);
+	text("chilled butter, grate", 180,850);
+	text("it and freeze it an", 190,880);
+	text("hour before you need", 170, 910);
+	text("to use it.", 265,940);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 297, 1000);
+
+
+	//next on top row
+	fill(156, 219, 255);
+	rect(600,750,400,300);
+	fill(214, 214, 214);
+	rect(620,770,360,260);
+	fill(39, 134, 143);
+	rect(750,970,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Make sure your", 670,820);
+	text("ingredients are room", 635,850);
+	text("temperature to make", 640,880);
+	text("the baking process", 660, 910);
+	text("easier.", 745,940);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 757, 1000);
+
+
+	//top right box
+	fill(74, 180, 255);
+	rect(1060,750,400,300);
+	fill(214, 214, 214);
+	rect(1080,770,360,260);
+	fill(39, 134, 143);
+	rect(1210,970,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("To make the", 1170,820);
+	text("icing on your", 1155,850);
+	text("cake look smoother,", 1115,880);
+	text("dip your spatula", 1130, 910);
+	text("in hot water.", 1165,940);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 1217, 1000);
+
+
+
+
+	//LAST ROW
+	fill(156, 219, 255);
+	rect(140,1150,400,300);
+	fill(214, 214, 214);
+	rect(160,1170,360,260);
+	fill(39, 134, 143);
+	rect(290,1370,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Weigh ingredients", 190,1220);
+	text("in grams using a ", 195,1250);
+	text("digital scale in order", 175,1280);
+	text("to eliminate errors", 185, 1310);
+	text("+ increase accuracy.", 180,1340);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 297, 1400);
+
+
+	//next on top row
+	fill(74, 180, 255);
+	rect(600,1150,400,300);
+	fill(214, 214, 214);
+	rect(620,1170,360,260);
+	fill(39, 134, 143);
+	rect(750,1370,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Try to keep the", 675,1220);
+	text("oven door closed", 665,1250);
+	text("as you're baking ", 670,1280);
+	text("for your baked goods", 635, 1310);
+	text("to cook properly.", 680,1340);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 757, 1400);
+
+
+	//top right box
+	fill(156, 219, 255);
+	rect(1060,1150,400,300);
+	fill(214, 214, 214);
+	rect(1080,1170,360,260);
+	fill(39, 134, 143);
+	rect(1210,1370,100,40);
+	textFont('Segoe Script');
+	textSize(30);
+	text("Use a light", 1170,1220);
+	text("colored pan when", 1115,1250);
+	text("baking, in order to", 1110, 1280);
+	text("prevent your baked", 1105, 1310);
+	text("goods from burning.", 1105, 1340);
+	fill(214, 214, 214);
+	textFont('Lobster');
+	textSize(18);
+	text("Learn More", 1217, 1400);
+
+	
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
